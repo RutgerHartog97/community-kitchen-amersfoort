@@ -15,4 +15,8 @@
  var t=document.querySelector('.navtoggle'),n=document.getElementById('nav');
  if(t)t.addEventListener('click',function(){n.classList.toggle('open');});
  document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});
+ document.querySelectorAll('.photoslides').forEach(function(box){
+  var imgs=box.querySelectorAll('img');if(imgs.length<2)return;var i=0;
+  setInterval(function(){imgs[i].classList.remove('on');i=(i+1)%imgs.length;imgs[i].classList.add('on');},4000);
+ });
 })();

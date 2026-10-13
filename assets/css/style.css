@@ -46,6 +46,9 @@ section{padding:clamp(34px,4.5vw,60px) 0}
 .statement{font-family:var(--head);text-transform:uppercase;font-size:clamp(26px,3.2vw,44px);line-height:1.02;color:var(--ink)}
 .statement b{color:var(--blue)}
 .round-img{border-radius:24px;overflow:hidden;border:1px solid #eee;background:#fff}
+.photoslides{position:relative;aspect-ratio:3/2}
+.photoslides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.photoslides img.on{opacity:1}
 .prose p{max-width:66ch;margin:0 0 18px;color:#31363d}
 .prose p.big{font-size:clamp(19px,2vw,26px);color:var(--ink);font-weight:500}
 .eventbar{background:var(--orange);color:#fff;border-radius:24px;padding:26px clamp(24px,4vw,44px);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:34px}
