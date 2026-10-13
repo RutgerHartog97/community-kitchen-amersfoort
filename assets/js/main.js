@@ -7,7 +7,7 @@
   try{localStorage.setItem('cka_lang',l);}catch(e){}
   document.querySelectorAll('.langtoggle').forEach(function(b){b.textContent=(l==='en'?'NL':'EN');});
  }
- var l='en';try{l=localStorage.getItem('cka_lang')||'en';}catch(e){}
+ var l='nl';try{l=localStorage.getItem('cka_lang')||'nl';}catch(e){}
  apply(l);
  document.querySelectorAll('.langtoggle').forEach(function(b){b.addEventListener('click',function(){apply(document.documentElement.lang==='en'?'nl':'en');});});
  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
